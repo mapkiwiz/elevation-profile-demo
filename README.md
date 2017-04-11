@@ -8,3 +8,13 @@ This demo is using :
 - MapBoxGL (for displaying vector tiles)
 - React
 - D3
+
+## Build and run demo
+
+```
+npm install
+npm run
+```
+
+The demo should be visible at :
+http://localhost:8080
