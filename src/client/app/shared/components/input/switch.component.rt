@@ -1,0 +1,21 @@
+<div style="{{ 'width': (2*this.props.width) + 'px', 'background-color': 'white' }}"
+     class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on
+            bootstrap-switch-id-switch-size bootstrap-switch-animate
+            {'bootstrap-switch-' + this.props.size }"
+     onClick="{ e => this.toggle(e) }">
+  <div style="{{ 'width': (4*this.props.width) + 'px', 'marginLeft': ((this.state.value)? 0:-this.props.width) + 'px'  }}"
+       class="bootstrap-switch-container">
+    <span
+      style="{{ 'width': this.props.width + 'px' }}"
+      class="bootstrap-switch-handle-on { 'bootstrap-switch-' + this.props.style }">
+      { this.props.labelOn }
+    </span>
+    <span style="{{ 'width': this.props.width + 'px' }}"
+         class="bootstrap-switch-label"></span>
+    <span style="{{ 'width': this.props.width + 'px' }}"
+         class="bootstrap-switch-handle-off bootstrap-switch-default">
+    { this.props.labelOff }
+    </span>
+    <input name="{ this.props.name }" checked="{ this.state.value }" type="checkbox" />
+  </div>
+</div>

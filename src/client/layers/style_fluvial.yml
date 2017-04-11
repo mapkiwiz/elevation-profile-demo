@@ -1,0 +1,20 @@
+tilejson: '2.0.0'
+id: style_fluvial
+type: xyz
+title: Style fluvial bassin RMC
+attribution: Geopeka
+minzoom: 0
+maxzoom: 20
+bounds:
+  - 4.700683
+  - 44.194116
+  - 5.152194
+  - 44.504362
+format: png
+tiles:
+  - 'http://tiles.mapkiwiz.fr/styles/style_fluvial/rendered/{z}/{x}/{y}.png'
+center:
+  - 4.9264385
+  - 44.349239
+  - 12
+opacity: 0.8

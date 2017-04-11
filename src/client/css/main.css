@@ -1,0 +1,173 @@
+.header, .jumbotron {
+  border-bottom: 1px solid #e5e5e5
+}
+
+.browsehappy {
+  margin: .2em 0;
+  background: #ccc;
+  color: #000;
+  padding: .2em 0
+}
+
+body, html {
+  padding: 0;
+  height: 100%;
+  width: 100%
+}
+
+.root-panel {
+  position: absolute;
+  z-index: 900;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+}
+
+.panel-container {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 15px;
+  pointer-events: all;
+  box-shadow: 4px 4px 5px #aaa;
+}
+
+.carousel, .nav, .pagination, .panel-title a {
+  cursor: pointer
+}
+
+.footer, .header, .marketing {
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.header {
+  margin-bottom: 10px
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px
+}
+
+.footer {
+  margin-top: 30px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5
+}
+
+.container-narrow > hr {
+  margin: 30px 0
+}
+
+.jumbotron {
+  text-align: center
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px
+}
+
+.marketing {
+  margin: 40px 0
+}
+
+.marketing p + h4 {
+  margin-top: 28px
+}
+
+
+
+.enqueteurs-marker {
+  color: #006400;
+  font-size: 20px
+}
+
+.us-marker {
+  font-size: 20px
+}
+
+.us-marker-unassigned {
+  color: #8b0000
+}
+
+.us-marker-assigned-other {
+  color: #a9a9a9
+}
+
+.us-marker-selected {
+  color: #337AB7
+}
+
+.help-block dd, .help-block dt {
+  display: inline
+}
+
+.help-block dd:after {
+  content: '';
+  display: block;
+  clear: both
+}
+
+.drag-handle {
+  cursor: move;
+}
+
+.color-brewer-set3-c1 {
+  color: #8dd3c7
+}
+
+.color-brewer-set3-c2 {
+  color: #ffffb3
+}
+
+.color-brewer-set3-c3 {
+  color: #bebada
+}
+
+.color-brewer-set3-c4 {
+  color: #fb8072
+}
+
+.color-brewer-set3-c5 {
+  color: #80b1d3
+}
+
+.color-brewer-set3-c6 {
+  color: #fdb462
+}
+
+.color-brewer-set3-c7 {
+  color: #b3de69
+}
+
+.color-brewer-set3-c8 {
+  color: #fccde5
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px
+  }
+
+  .footer, .header, .marketing {
+    padding-left: 0;
+    padding-right: 0
+  }
+
+  .header {
+    margin-bottom: 30px
+  }
+
+  .jumbotron {
+    border-bottom: 0
+  }
+}

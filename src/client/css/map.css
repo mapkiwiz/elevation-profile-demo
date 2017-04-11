@@ -1,0 +1,31 @@
+.map-container {
+  padding: 0
+}
+
+.full-screen-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.commune-label {
+  color: darkblue;
+}
+
+.commune-label .badge {
+  background-color: darkblue;
+}
+
+.commune-label.feature-marker-selected .badge {
+  background-color: gold;
+}
+
+.commune-label .details {
+  display: none;
+}
+
+.commune-label.high-zoom .details {
+  display: inline;
+}

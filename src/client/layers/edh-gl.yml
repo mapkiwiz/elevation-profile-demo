@@ -1,0 +1,7 @@
+type: gl
+id: edh
+title: Espace de divagation historique
+attribution: |
+    <a href="http://www.geopeka.com">Geopeka</a>
+style: https://tiles.mapkiwiz.fr/styles/edh.json
+accessToken: no-token

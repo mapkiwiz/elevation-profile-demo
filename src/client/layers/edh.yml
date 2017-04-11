@@ -1,0 +1,19 @@
+tilejson: '2.0.0'
+id: edh
+type: xyz
+title: Espace de divagation historique
+attribution: Geopeka
+minzoom: 0
+maxzoom: 20
+bounds:
+  - 4.700683
+  - 44.194116
+  - 5.152194
+  - 44.504362
+format: png
+tiles:
+  - 'http://tiles.mapkiwiz.fr/styles/edh/rendered/{z}/{x}/{y}.png'
+center:
+  - 4.9264385
+  - 44.349239
+  - 12

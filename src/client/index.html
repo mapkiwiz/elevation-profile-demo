@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <title><%= webpackConfig.metadata.title %></title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="<%= webpackConfig.metadata.title %>">
+
+  <% if (htmlWebpackPlugin.files.favicon) { %>
+  <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.favicon%>">
+  <% } %>
+  <% if (htmlWebpackPlugin.options.mobile) { %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <% } %>
+
+  <!-- base url -->
+  <base href="<%= webpackConfig.metadata.baseUrl %>">
+
+</head>
+
+<body>
+
+  <% if (htmlWebpackPlugin.options.unsupportedBrowser) { %>
+  <style>.unsupported-browser { display: none; }</style>
+  <div class="unsupported-browser">
+    Sorry, your browser is not supported.  Please upgrade to
+    the latest version or switch your browser to use this site.
+    See <a href="http://outdatedbrowser.com/">outdatedbrowser.com</a>
+    for options.
+  </div>
+  <% } %>
+
+
+  <% if (htmlWebpackPlugin.options.appMountId) { %>
+  <div id="<%= htmlWebpackPlugin.options.appMountId%>"></div>
+  <% } %>
+
+  <div id="popover-render-target" style="display: none"></div>
+
+  <% if (htmlWebpackPlugin.options.appMountIds && htmlWebpackPlugin.options.appMountIds.length > 0) { %>
+  <% for (var index in htmlWebpackPlugin.options.appMountIds) { %>
+  <div id="<%= htmlWebpackPlugin.options.appMountIds[index]%>"></div>
+  <% } %>
+  <% } %>
+
+  <% if (htmlWebpackPlugin.options.devServer) { %>
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+
+
+</body>
+</html>

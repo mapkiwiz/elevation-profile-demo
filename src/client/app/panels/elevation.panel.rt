@@ -1,0 +1,59 @@
+import React from 'react';
+import Draggable from 'react-draggable';
+import { Resizable } from 'react-resizable';
+require('react-resizable/css/styles.css');
+import {MessageBox} from '../shared/components/message.component';
+import {ElevationProfileViz} from '../viz/elevation.viz';
+
+export const template = function() {
+	let info = null;
+	if (this.props.visible) {
+		if (this.props.profile !== undefined) {
+			info = (
+				<div>
+					<MessageBox message={ this.props.message } status={ this.props.status }></MessageBox>
+					<ElevationProfileViz data={ this.props.profile }
+										 map={ this.getMap() } >
+					                   
+					</ElevationProfileViz>
+				</div>
+			);
+		} else if (this.props.axis !== undefined) {
+			info = (
+				<MessageBox message={ this.props.message } status={ this.props.status }></MessageBox>
+			);
+		} else {
+			info = (
+				<MessageBox message={ this.props.message } status={ this.props.status }></MessageBox>
+			);
+		}
+		return (
+			<Draggable handle=".drag-handle" start={{ x: this.props.left, y: this.props.top }} onDrag={ (e, position) => { return this.dragTo(position); } }>
+				<Resizable width={600} height={500}
+				           minConstraints={[ 300, 250 ]} maxConstraints={[ 1000, 835 ]}
+				           lockAspectRatio={ true }
+				           onResize={(e, {element, size}) => { return this.resize(size); }}>
+	    			<div className="panel-container" style={{ width: this.props.width + "px", height: this.props.height + "px", left: this.props.initial_left, top: this.props.initial_top, zIndex: 800 }}>
+						<h3 className="drag-handle" ref={ (elt) => { this.handle = elt; } }>
+							{ this.props.title }
+							<div className="pull-right close"
+							     onClick={ (e) => this.close(e) }>
+							     <span className="glyphicon glyphicon-remove"></span>
+							</div>
+						</h3>
+						<hr/>
+						{ info }
+						{ this.props.children }
+					</div>
+				</Resizable>
+			</Draggable>
+		);
+	} else {
+		return (
+			<div></div>
+		);
+	}
+}
+
+
+

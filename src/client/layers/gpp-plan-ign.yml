@@ -1,0 +1,10 @@
+id: plan-ign
+type: wmts
+url: 'https://wxs.ign.fr/{apikey}/geoportail/wmts'
+apikey: 8uyfcxm8ed439q0oq8mf9956
+title: Plan IGN
+layer: GEOGRAPHICALGRIDSYSTEMS.PLANIGN
+style: normal
+tilematrixSet: PM
+format: "image/jpeg"
+attribution: "&copy; <a href='http://www.ign.fr'>IGN</a>"

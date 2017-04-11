@@ -1,0 +1,57 @@
+.elevation-profile-viz .axis path,
+.elevation-profile-viz .axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.elevation-profile-viz .axis text {
+  font-family: sans-serif;
+  font-size: 9pt;
+}
+
+.elevation-profile-viz .axis.label text {
+  font-style: italic;
+  fill: #6d6d6d;
+}
+
+.elevation-profile-viz .grid line {
+  stroke: lightgray;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.elevation-profile-viz .grid path {
+  stroke-width: 0;
+}
+
+.elevation-profile-viz .overlay path {
+  stroke: none;
+  stroke-width: 0px;
+  fill: none;
+  pointer-events: all;
+}
+
+.elevation-profile-viz .crosshair circle {
+  fill: lightgray;
+  fill-opacity: 0.3;
+  stroke: orange;
+  stroke-width: 1.8px;
+  shape-rendering: crispEdges;
+  stroke-opacity: 0.8;
+}
+
+.elevation-profile-viz .crosshair path {
+  stroke: orange;
+  stroke-width: 1.1px;
+  shape-rendering: crispEdges;
+  stroke-opacity: 0.4;
+}
+
+.elevation-profile-viz .crosshair text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+  fill: navy;
+  background-color: white;
+}

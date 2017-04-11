@@ -1,0 +1,7 @@
+type: gl
+id: style_fluvial
+title: Style fluvial bassin RMC
+attribution: |
+    <a href="http://www.geopeka.com">Geopeka</a>
+style: https://tiles.mapkiwiz.fr/styles/style_fluvial.json
+accessToken: no-token

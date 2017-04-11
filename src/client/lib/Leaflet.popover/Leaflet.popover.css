@@ -1,0 +1,52 @@
+.leaflet-popover {
+  background-clip: padding-box;
+  color: #111;
+  display: block;
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*white-space: nowrap;*/
+  width: 260px;
+  z-index: 6;
+}
+
+.leaflet-popover.popover {
+  max-width: 350px;
+}
+
+.leaflet-popover.leaflet-clickable {
+  cursor: pointer;
+}
+
+.leaflet-popover:before,
+.leaflet-popover:after {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  content: none;
+  position: absolute;
+  top: 5px;
+}
+
+.leaflet-popover:before {
+  border-right: 6px solid black;
+  border-right-color: inherit;
+  left: -10px;
+}
+
+.leaflet-popover:after {
+  border-left: 6px solid black;
+  border-left-color: inherit;
+  right: -10px;
+}
+
+.leaflet-popover-right:before,
+.leaflet-popover-left:after {
+  content: "";
+}
+
+.leaflet-popover .popover-title .close {
+  line-height: 0.7;
+}

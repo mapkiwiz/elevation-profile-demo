@@ -1,0 +1,107 @@
+.list-container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 450px;
+  margin-top: 20px;
+}
+
+.list-header {
+  border-bottom: 1px solid darkgrey;
+  padding: 10px 10px 20px 15px;
+  /* border-radius: 5px; */
+  margin-right: 11px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+ul.list {
+  list-style: none inside;
+  margin-left: -40px;
+}
+
+ul.list li {
+  border: 1px solid #d3d3d3;
+  border-top: none;
+  padding: 15px;
+}
+
+ul.list li:first-child {
+  border-top: 1px solid #d3d3d3;
+  border-radius: 5px 5px 0 0;
+}
+
+ul.list li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+ul.list li:only-child {
+  border-top: 1px solid #d3d3d3;
+  border-radius: 5px 5px 5px 5px;
+
+}
+
+.list li:hover {
+
+  background-color: rgba(150, 150, 150, 0.25);
+
+}
+
+.list li.selected {
+
+  background-color: rgba(160, 230, 160, 0.25);
+
+}
+
+ul.list span.action {
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  padding: 10px;
+  display: none
+}
+
+ul.list .selected span.action {
+  display: inline-block
+}
+
+ul.list .selected a {
+  color: white;
+}
+
+ul.legend li {
+  vertical-align: middle;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+}
+
+ul.legend li:first-child {
+  vertical-align: middle;
+  border-top: none;
+}
+
+ul.legend li:last-child {
+  vertical-align: middle;
+  border-bottom: none;
+}
+
+.legend .legend-label {
+  font-size: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 15px;
+  height: 100%;
+}
+
+.legend .legend-icon {
+  font-size: 30px;
+  vertical-align: middle;
+  border-right: 1px solid lightgrey;
+  padding-right: 10px;
+}
+
+.legend .legend-icon {
+  display: inline-block;
+}
+
+.legend .legend-icon .badge {
+  font-size: 10pt;
+}
