@@ -13,7 +13,7 @@ This demo is using :
 
 ```
 npm install
-npm run
+npm start
 ```
 
 The demo should be visible at :
